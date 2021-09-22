@@ -16,7 +16,7 @@
 
         ## Recived values from data block
         output "vpc-arn" {
-            value = data.aws_vpc.web-server-vpc.id
+            value = data.aws_vpc.web-server-vpc.arn
         }
 
         ## Output 
@@ -25,7 +25,7 @@
     - Expression while fatching values from data block
 ```HTML
         data.<Resource TYPE>.<Resource NAME>.<ATTRIBUTE>
-            
+
         Example
         data.aws_vpc.web-server-vpc.id
 ```
