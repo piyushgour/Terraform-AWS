@@ -44,7 +44,7 @@ The following meta-arguments are :
 
     - Some resource types provide a special timeouts nested block argument. This allows you to how long operation can considered.
 
-    ```HTML
+```HTML
         resource "aws_db_instance" "example" {
         # Some Code...
 
@@ -54,4 +54,4 @@ The following meta-arguments are :
             delete = "2h"       # 2 hours
         }
     }
-    ```
+```
