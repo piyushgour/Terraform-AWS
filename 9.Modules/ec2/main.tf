@@ -6,7 +6,7 @@ resource "aws_instance" "test" {
   ebs_optimized = var.ebs_optimized
   monitoring    = var.ec2_monitoring
 
-  tags {
+  tags = {
     Name       = "Terraform"
     department = "Devops"
     team       = "Infra"
