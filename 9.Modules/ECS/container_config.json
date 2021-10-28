@@ -1,0 +1,15 @@
+[
+    {
+      "name": "web_server",
+      "image": "httpd:2.4",
+      "cpu": 10,
+      "memory": 500,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80
+        }
+      ]
+    }
+  ]
