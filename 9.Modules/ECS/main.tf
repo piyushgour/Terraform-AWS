@@ -10,3 +10,21 @@ resource "aws_ecs_task_definition" "task1" {
 
 
 }
+
+
+
+####### ECS Cluster Code ########
+
+resource "aws_ecs_cluster" "example" {
+  name = "Piyush-Test"
+
+  capacity_providers = ["FARGATE_SPOT", "FARGATE"]
+  default_capacity_provider_strategy {
+    capacity_provider = "FARGATE"
+  }
+
+  setting {
+    name  = "containerInsights"
+    value = "disabled"
+  }
+}
