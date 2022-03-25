@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hoegertn
+Build-Jdk: 1.8.0_222
+Extension-Name: pipeline-aws
+Specification-Title: This plugins adds Jenkins pipeline steps to inter
+ act with the AWS API
+Specification-Vendor: Taimos GmbH
+Implementation-Vendor: Taimos GmbH
+Implementation-Title: pipeline-aws
+Implementation-Version: 1.43
+Group-Id: de.taimos
+Short-Name: pipeline-aws
+Long-Name: Pipeline: AWS Steps
+Url: https://github.com/jenkinsci/pipeline-aws-plugin
+Plugin-Version: 1.43
+Hudson-Version: 2.60.3
+Jenkins-Version: 2.60.3
+Plugin-Dependencies: workflow-step-api:2.14,aws-credentials:1.19,aws-j
+ ava-sdk:1.11.457,credentials:2.1.16,plain-credentials:1.4,script-secu
+ rity:1.41,structs:1.14
+Plugin-Developers: Thorsten Hoeger:hoegertn:thorsten.hoeger@taimos.de
+
