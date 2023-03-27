@@ -5,9 +5,9 @@ module "alb" {
 
   load_balancer_type = "application"
 
-  vpc_id             = "vpc-d6d2d1ac"
-  subnets            = ["subnet-0ea52343","subnet-b58f7294"]
-  security_groups    = ["sg-2dd8a803",]
+  vpc_id             = "vpc-abc"
+  subnets            = ["subnet-abc","subnet-abcd"]
+  security_groups    = ["sg-abc",]
 
 #   access_logs = {
 #     bucket = "my-alb-logs"
@@ -21,11 +21,11 @@ module "alb" {
       target_type      = "instance"
       targets = {
         my_target = {
-          target_id = "i-027d6079d7ae74241"
+          target_id = "i-abc"
           port = 80
         }
         # my_other_target = {
-        #   target_id = "i-024ab5722e9d189d0"
+        #   target_id = "i-abcd"
         #   port = 8080
         # }
       }
@@ -36,7 +36,7 @@ module "alb" {
     {
       port               = 443
       protocol           = "HTTPS"
-      certificate_arn    = "arn:aws:acm:us-east-1:463423328685:certificate/b93a6772-95f2-44a0-b37e-f1d8438ffbd0"
+      certificate_arn    = "CERT-ARN"
       target_group_index = 0
     }
   ]
