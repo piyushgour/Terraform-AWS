@@ -182,7 +182,7 @@ variable "load_balancing_algorithm_type" {
 variable "protocol" {
   description = "Protocal of the load balancer and values are HTTP or HTTPS."
   type        = string
-  default     = null
+  default     = "http"
 }
 
 variable "health_check_path" {

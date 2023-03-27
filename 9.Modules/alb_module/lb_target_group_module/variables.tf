@@ -10,12 +10,24 @@ variable "target_group_tags" {
   default     = {}
 }
 
+variable "alb_arn" {
+  description = "The ALB arn name."
+  type        = string
+  default     = ""
+}
+
+variable "alb_id" {
+  description = "The ALB arn ID."
+  type        = string
+  default     = ""
+}
 
 variable "tg_name" {
   description = "The resource name and Name tag of the load balancer."
   type        = string
   default     = null
 }
+
 
 variable "name_prefix" {
   description = "The resource name prefix and Name tag of the load balancer. Cannot be longer than 6 characters"
