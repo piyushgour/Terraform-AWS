@@ -4,10 +4,10 @@ provider "aws" {
 module "alb" {
   source = "../alb_module"
 
-  security_groups = ["sg-2dd8a803",]
-  subnets = ["subnet-0ea52343","subnet-b58f7294"]
-  vpc_id = "vpc-d6d2d1ac"
-  certificate_arn = "arn:aws:acm:us-east-1:463423328685:certificate/b93a6772-95f2-44a0-b37e-f1d8438ffbd0"
+  security_groups = ["sg-abc",]
+  subnets = ["subnet-abc","subnet-abc"]
+  vpc_id = "vpc-abc"
+  certificate_arn = "cert-arn:aws:"
 
 
 }
